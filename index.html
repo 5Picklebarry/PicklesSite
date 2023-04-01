@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>ㅤㅤㅤ5Picklebarry's Website ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ  5picklebarry#6085</title>
+<link rel="shortcut icon" href="Img/icon.ico" type="image/x-icon">
+  
+  <script type="text/javascript">
+
+    var titleText = document.title;
+
+    function titleMarquee() {
+
+      titleText = titleText.substring(1, titleText.length) + titleText.substring(0, 1);
+      document.title = titleText;
+      setTimeout("titleMarquee()", 500);
+    }
+
+  </script>
+  <meta name="description" content="5Picklebarrys website">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body onload="titleMarquee()">
+  <div class="navigation">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="/BioLink/bio.html">Bio</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="container">
+    <h2 id="home">Pickle Hub (Main Project)</h2>
+    <p>
+      Pickle Hub is a powerful hub for the popular online game, Roblox.
+      It offers a variety of features that allow players to automate many of the more repetitive or time-consuming tasks
+      in the game,
+      such as farming for resources or hatching eggs.
+    </p>
+
+    <p>Usage:</p>
+    <div class="codebox">
+      <code class="code">loadstring(game:HttpGet(("https://picklebarrysite.not-gone4u.repl.co/Pickle-Hub/loader.lua")))()
+</code>
+      <button class="copy-button" onclick="copyToClipboard()">Copy</button>
+    </div>
+
+    <script>
+      function copyToClipboard() {
+        var code = document.querySelector(".code");
+        var range = document.createRange();
+        range.selectNode(code);
+        window.getSelection().removeAllRanges();
+        window.getSelection().addRange(range);
+        document.execCommand("copy");
+        window.getSelection().removeAllRanges();
+        alert("Code copied to clipboard!");
+      }
+    </script>
+    <p>
+      To use Pickle Hub, simply put the loader loadstring in your executor in any supported game and you're good to go!
+    </p>
+    <div class="img-container">
+      <img src="https://cdn.discordapp.com/attachments/1072323369275498557/1076917514266755072/image.png"
+        alt="Pickle Hub Image 1">
+      <img src="https://cdn.discordapp.com/attachments/1072323369275498557/1076918121044135936/image.png"
+        alt="Pickle Hub Image 2">
+      <img src="https://cdn.discordapp.com/attachments/1072323369275498557/1076918566567284816/image.png"
+        alt="Pickle Hub Image 3">
+    </div>
+    <h2 id="about">About Me</h2>
+    <p>
+      I am an 8th grade student with a keen interest in Lua programming language.
+      I am passionate about developing my skills and exploring its potential applications in game development and
+      software engineering.
+      Outside of programming, I enjoy sports.
+    </p>
+    <h2 id="contact">Contact</h2>
+    <p>5picklebarry@gmail.com</p>
+    <p>5picklebarry#6085</p>
+  </div>
+  <footer>
+    <p>Copyright © 2023 5Picklebarry. All rights reserved.</p>
+  </footer>
+</body>
+<script>
+
+</script>
+
+</html>

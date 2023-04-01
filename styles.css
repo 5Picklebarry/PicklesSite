@@ -1,0 +1,142 @@
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.2s ease;
+}
+
+.navigation a:hover {
+  background-color: #444;
+}
+
+.img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.img-container img {
+  max-width: 300px;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #111;
+  transition: all 0.5s ease;
+}
+
+.img-container img:hover {
+  box-shadow: 0px 0px 20px #fff;
+  animation: glow 1s infinite alternate;
+  transform: rotateX(20deg) rotateY(-20deg) translateX(-10px);
+}
+
+.img-container img:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.3);
+  z-index: -1;
+  transform: rotateX(20deg) rotateY(-20deg) translateX(-10px);
+  animation: tilt 0.5s forwards;
+}
+
+@keyframes tilt {
+  from {
+    transform: rotateX(20deg) rotateY(-20deg) translateX(-10px);
+  }
+  to {
+    transform: rotateX(0deg) rotateY(0deg) translateX(0px);
+  }
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0px 0px 5px #fff;
+  }
+  to {
+    box-shadow: 0px 0px 10px #fff, 0px 0px 15px #fff, 0px 0px 20px #fff;
+  }
+}
+
+.codebox {
+  border: 1px solid #fff;
+  background-color: #111;
+  padding: 10px;
+  display: inline-block;
+  font-size: 12px;
+  max-width: 1000px;
+  overflow-x: auto;
+  width: 100%;
+}
+
+.code {
+  color: #fff;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.copy-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 25%;
+}
+
+.copy-button:hover {
+  background-color: #555;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto;
+  max-width: 200px;
+  height: auto;
+}
